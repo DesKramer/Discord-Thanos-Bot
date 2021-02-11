@@ -22,7 +22,7 @@ bot.on('message', msg => {
   if(msg.author.id !== bot.user.id) {
     if(msg.author.id === CURR_GUILD.ownerID){
       // bans users
-      if (msg.content === '!ban') {
+      if (msg.content === '!snap') {
         
         // Gets the all the guild members 
         let memberPromise = msg.guild.members.fetch();
